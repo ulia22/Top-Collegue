@@ -26,7 +26,6 @@
   Collègue ajouté!
 </div>
 <div class="row">
-
-  <app-un-collegue *ngFor="let col of cols" [collegue]="col"></app-un-collegue>
+  <app-un-collegue *ngFor="let col of this.collegues" [collegue]="col"></app-un-collegue>
 </div>
 </div>

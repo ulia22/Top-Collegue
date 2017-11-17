@@ -1,7 +1,10 @@
 export class Collegue {
-  private _nom:string
-  private _urlImage:string
-  private _score:number
+
+
+  constructor(
+  private _nom?:string,
+  private _urlImage?:string,
+  private _score?:number){}
 
   //Getters
   get nom():string{return this._nom}
@@ -12,4 +15,5 @@ export class Collegue {
   set nom(n:string){this._nom=n}
   set urlImage(u:string){this._urlImage=u}
   set score(s:number){this._score=s}
+
 }
