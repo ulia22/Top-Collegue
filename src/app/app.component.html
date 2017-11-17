@@ -1,4 +1,5 @@
 <div class="container">
+
   <div class="row" id="header">
     <div class="col-md-12">
       <h1>Top Collègues</h1>
@@ -22,10 +23,22 @@
       </form>
     </div>
   </div>
+
+
   <div class="alert alert-success" role="alert" [hidden]="displayAlert">
-  Collègue ajouté!
-</div>
-<div class="row">
-  <app-un-collegue *ngFor="let col of this.collegues" [collegue]="col"></app-un-collegue>
-</div>
+    Collègue ajouté!
+  </div>
+
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/classique" routerLinkActive="active">Classique</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/tableau"  routerLinkActive="active">Tableau</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/carroussel"  routerLinkActive="active">Carroussel</a>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>
 </div>
