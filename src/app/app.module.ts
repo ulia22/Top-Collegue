@@ -12,6 +12,8 @@ import { TableauComponent } from './tableau/tableau.component';
 import { CarrousselComponent } from './carroussel/carroussel.component';
 import { RowUnCollegueComponent } from './row-un-collegue/row-un-collegue.component';
 import { CarrousselItemCollegueComponent } from './carroussel-item-collegue/carroussel-item-collegue.component';
+import { ScorePipe } from './shared/pipe/score.pipe';
+import { FilterPipe } from './shared/pipe/filter.pipe';
 
 const appRoutes: Routes = [
 { path: 'classique', component: ClassiqueComponent }, // /page1 affiche le composant A
@@ -29,7 +31,9 @@ const appRoutes: Routes = [
     TableauComponent,
     CarrousselComponent,
     RowUnCollegueComponent,
-    CarrousselItemCollegueComponent
+    CarrousselItemCollegueComponent,
+    ScorePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

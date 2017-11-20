@@ -11,3 +11,11 @@ ul
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.input-group
+{
+  margin-bottom: 20px;
+}
+.carousel-item-next.carousel-item-prev.carousel-item.active{
+  text-align: center;
+}
